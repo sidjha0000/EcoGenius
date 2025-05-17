@@ -1,0 +1,216 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2d3e50;
+    padding: 20px 0;
+    color: white;
+    font-size: 24px;
+}
+
+header .header-logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #F5A623;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d3e50;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+footer .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-links li {
+    display: inline;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    color: #A8D0E6;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #F5A623;
+}
+
+/* Sustainability Journal Page Styles */
+.journal {
+    padding: 40px;
+    background-color: #f4f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.journal h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2d3e50;
+}
+
+.journal p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.journal-entry form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.journal-entry label {
+    font-size: 16px;
+    color: #4CAF50;
+}
+
+.journal-entry input,
+.journal-entry textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.journal-entry button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.journal-entry button:hover {
+    background-color: #45a049;
+}
+
+.entries {
+    margin-top: 40px;
+}
+
+.entries h3 {
+    font-size: 24px;
+    color: #2d3e50;
+}
+
+.entries-list {
+    margin-top: 20px;
+}
+
+.entries-list .entry {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.entries-list .entry h4 {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+.entries-list .entry p {
+    font-size: 16px;
+    color: #333;
+}
+
+.entries-list .entry .date {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Common Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}

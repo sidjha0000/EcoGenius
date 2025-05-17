@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Contributions - EcoGenius</title>
+    <link rel="stylesheet" href="../styles/community-contributions.css">
+    <link rel="icon" href="../image/logo.webp" type="image/webp" sizes="32x32">
+
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            🌍 EcoGenius
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Community Contributions Section -->
+        <section class="community-contributions">
+            <h2>🌱 Community Contributions</h2>
+            <p>Share your eco-friendly actions with the community and inspire others to make a difference! 🌍</p>
+
+            <!-- Form to submit a new contribution -->
+            <form id="contribution-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="contribution">Your Contribution:</label>
+                <textarea id="contribution" placeholder="Describe your eco-friendly action or idea" required></textarea>
+
+                <button type="submit" class="btn">Submit Contribution</button>
+            </form>
+
+            <!-- List of contributions -->
+            <h3>Previous Contributions</h3>
+            <div id="contributions-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🌱 EcoGenius | A Step Towards a Greener Future | Contact: support@ecogenius.com</p>
+    </footer>
+
+    <script src="../scripts/community-contributions.js"></script>
+</body>
+</html>

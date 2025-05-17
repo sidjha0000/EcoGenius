@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - EcoGenius</title>
+    <link rel="stylesheet" href="../styles/leaderboard.css">
+    <link rel="icon" href="../image/logo.webp" type="image/webp" sizes="32x32">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">EcoGenius</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard">
+        <div class="container">
+            <h1>EcoGenius Leaderboard</h1>
+            <p>Check out the top scorers in EcoGenius!</p>
+            
+            <div id="leaderboard-list">
+                <!-- Leaderboard will be dynamically generated here -->
+            </div>
+
+            <div class="add-score">
+                <h2>Add Your Score</h2>
+                <form id="score-form">
+                    <input type="text" id="username" placeholder="Enter your name" required>
+                    <input type="number" id="score" placeholder="Enter your score" required min="0">
+                    <button type="submit">Add Score</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 EcoGenius. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/leaderboard.js"></script>
+</body>
+</html>

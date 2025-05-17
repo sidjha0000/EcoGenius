@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ea;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Header Bar */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Below header */
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #2E7D32;
+    padding: 20px;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Sidebar Buttons */
+.sidebar .nav-button {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar .nav-button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Active Button */
+.sidebar .nav-button.active {
+    background-color: #66BB6A;
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px; /* Adjust to fit sidebar */
+    margin-top: 80px; /* Prevents overlap with the fixed header */
+    padding: 20px;
+    width: calc(100% - 260px);
+    text-align: center;
+}
+
+/* Scanner Box */
+.scanner-container {
+    padding: 16px; /* Slightly reduced padding for a more compact look */
+    background: #fff;
+    width: 90%; /* Increased responsiveness */
+    max-width: 420px; /* Slightly larger for better usability */
+    margin: 20px auto; /* Added top margin for better spacing */
+    border-radius: 16px; /* Slightly reduced for a more modern look */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* Softer shadow for a sleek effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* File Input */
+input[type="file"] {
+    margin: 15px 0;
+    padding: 8px;
+    border: 2px dashed #4CAF50;
+    width: 100%;
+    text-align: center;
+    background-color: #e8f5e9;
+    cursor: pointer;
+}
+
+/* Scan Button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+}
+
+button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Results Box */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    display: inline-block;
+}

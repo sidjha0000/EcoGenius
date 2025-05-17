@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGenius - Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="../styles/Carbon_Footprint.css">
+    <link rel="icon" href="../image/logo.webp" type="image/webp" sizes="32x32">
+</head>
+<body>
+
+    <!-- 🌍 Header with Navigation -->
+    <header>
+        <h1>🌍 EcoGenius</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Features.html">Features</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🌱 Welcome Message -->
+    <section class="welcome">
+        <h2>Welcome, Eco Warrior! 🌱</h2>
+        <p>Calculate your carbon footprint and take steps towards a greener planet!</p>
+    </section>
+
+    <!-- 🌍 Carbon Footprint Calculator -->
+    <div class="container">
+        <h2>Carbon Footprint Calculator</h2>
+
+        <label>Car Travel (km per week):</label>
+        <input type="number" id="car_km" placeholder="Enter km per week"><br>
+
+        <label>Electricity Consumption (kWh/month):</label>
+        <input type="number" id="electricity_kwh" placeholder="Enter kWh per month"><br>
+
+        <label>Diet Type:</label>
+        <select id="diet">
+            <option value="3.3">Meat-heavy</option>
+            <option value="1.7">Vegetarian</option>
+            <option value="1.5">Vegan</option>
+        </select><br>
+
+        <label>Do you recycle? (yes/no):</label>
+        <select id="recycle">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <button onclick="calculateFootprint()">Calculate</button>
+
+        <h3>Your Carbon Footprint: <span id="result">0</span> kg CO₂ per year</h3>
+    </div>
+
+    <script src="../scripts/Carbon_Footprint.js"></script>
+</body>
+</html>

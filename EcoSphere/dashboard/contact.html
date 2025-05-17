@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EcoGenius</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="icon" href="../image/logo.webp" type="image/webp" sizes="32x32">
+
+
+    
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">EcoGenius</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Fill out the form below, and we will get back to you as soon as possible.</p>
+
+            <!-- Form Section without backend -->
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </div>
+
+        <!-- Location Section (Static Image for Location) -->
+        <div class="location">
+            <h2>Our Location</h2>
+            <p>We are located at the heart of the city. Visit us at:</p>
+
+            <!-- Static map image for location -->
+            <div class="image-container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+                <img src="../image/map.png" alt="EcoGenius Location Map" class="map-image" 
+                     style="width: 50%; max-width: 300px; height: auto; border-radius: 10px; 
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 20px 0; 
+                            transition: transform 0.3s ease;" 
+                     onmouseover="this.style.transform='scale(1.05)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+            </div>
+                    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 EcoGenius. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../scripts/contact.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from submitting to backend
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            document.getElementById("formMessage").textContent = `Thank you, ${name}! We have received your message and will get back to you shortly.`;
+
+            document.getElementById("contactForm").reset();
+        });
+    </script>
+
+</body>
+</html>

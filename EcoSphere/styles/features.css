@@ -1,0 +1,235 @@
+/* General Reset and Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-right: 20px;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+/* Section Layout */
+#features, #sustainability-tips, #challenges, #testimonials {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    margin: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Feature Cards */
+.feature-cards, .challenges-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card, .challenge-card {
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-card h3, .challenge-card h3 {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.feature-card p, .challenge-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.feature-card:hover, .challenge-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card:active, .challenge-card:active {
+    transform: translateY(0);
+}
+
+/* Sustainability Tips */
+.tips-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tips-list li {
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tips-list li:before {
+    content: "✔";
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    top: 0;
+}
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .feature-cards, .challenges-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    header nav ul li {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .feature-cards, .challenges-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+}

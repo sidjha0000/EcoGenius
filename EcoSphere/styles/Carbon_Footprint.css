@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8eb;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌍 Header */
+header {
+    background-color: #19b16c;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 🌱 Welcome Message */
+.welcome {
+    background-color: #31614c;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.welcome p {
+    font-size: 16px;
+}
+
+/* 🌍 Main Container */
+.container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 📝 Labels and Inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+input, select {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 🌿 Button */
+button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1b4332;
+}
+
+/* 📊 Result Display */
+h3 {
+    margin-top: 20px;
+    color: #34495e;
+}
+
+span#result {
+    font-weight: bold;
+    color: #2d6a4f;
+}

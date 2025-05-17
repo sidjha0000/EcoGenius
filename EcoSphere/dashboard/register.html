@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - EcoGenius</title>
+    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="icon" href="../image/logo.webp" type="image/webp" sizes="32x32">
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">EcoGenius</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Register Form Section -->
+    <section id="register">
+        <div class="container">
+            <h1>Register</h1>
+
+            <!-- Success Message (Initially Hidden) -->
+            <div id="success-message" style="display: none; color: green; font-weight: bold;">
+                Successfully Registered!
+            </div>
+
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+
+        <!-- Display Registered Success Message Here -->
+        <div id="registration-success-message" style="display: none; color: green; font-weight: bold; margin-top: 20px;">
+            You have successfully registered! You can now log in with your credentials.
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 EcoGenius. All rights reserved.</p>
+    </footer>
+
+    <!-- Include JavaScript -->
+    <script src="../scripts/register.js"></script>
+</body>
+</html>

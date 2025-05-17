@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Score Quiz 🌱</title>
+    <link rel="stylesheet" href="../styles/eco-score.css">
+    <link rel="icon" href="../image/logo.webp" type="image/webp" sizes="32x32">
+
+</head>
+<body>
+
+    <header>
+        <h1>Eco Score Quiz 🌍</h1>
+    </header>
+
+    <main>
+        <section class="score-section">
+            <h2>Your Eco Score: <span id="eco-score">--</span></h2>
+            <p>Find out how eco-friendly your lifestyle is! Answer a few questions and get your score.</p>
+            <button id="start-quiz">Start Quiz</button>
+        </section>
+
+        <section id="quiz-container" class="hidden">
+            <div id="quiz-progress">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="quiz"></div>
+            <button id="next-question">Next</button>
+        </section>
+
+        <section id="result-container" class="hidden">
+            <h2>Your Final Score: <span id="final-score"></span></h2>
+            <p id="score-message"></p>
+            <div id="recommendations"></div>
+            <button id="restart-quiz">Try Again</button>
+        </section>
+    </main>
+    
+
+    <script src="../scripts/eco-score.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Journal - EcoGenius</title>
+    <link rel="stylesheet" href="../styles/journal.css">
+    <link rel="icon" href="../image/logo.webp" type="image/webp" sizes="32x32">
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            🌍 EcoGenius
+        </div>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../dashboard/about.html">About</a></li>
+            <li><a href="../dashboard/Features.html">Features</a></li>
+            <li><a href="../dashboard/leaderboard.html">Leaderboard</a></li>
+            <li><a href="../dashboard/contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="journal">
+            <h2>Your Sustainability Journal 📓</h2>
+            <p>Record your daily actions, thoughts, and reflections on how you're contributing to a greener future.</p>
+
+            <!-- Journal Entry Form -->
+            <div class="journal-entry">
+                <form id="journal-form">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="activity">Sustainability Action:</label>
+                    <textarea id="activity" name="activity" rows="4" placeholder="Describe your sustainability actions today..." required></textarea>
+                    
+                    <label for="thoughts">Your Thoughts:</label>
+                    <textarea id="thoughts" name="thoughts" rows="4" placeholder="Any reflections on your sustainability journey?" required></textarea>
+                    
+                    <button type="submit" class="btn">Save Entry</button>
+                </form>
+            </div>
+
+            <!-- Journal Entries List -->
+            <section class="entries">
+                <h3>Previous Entries</h3>
+                <div id="entries-list">
+                    <!-- Entries will appear here dynamically -->
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>🌱 EcoGenius | A Step Towards a Greener Future | Contact: support@ecogenius.com</p>
+        <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../dashboard/about.html">About</a></li>
+            <li><a href="../dashboard/Features.html">Features</a></li>
+            <li><a href="../dashboard/leaderboard.html">Leaderboard</a></li>
+            <li><a href="../dashboard/contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

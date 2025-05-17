@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Scanner - Echosphere</title>
+    <link rel="stylesheet" href="../styles/waste-scanner.css">
+    <link rel="icon" href="../image/logo.webp" type="image/webp" sizes="32x32">
+
+</head>
+<body>
+
+   
+    <header>
+        ♻️ Waste Scanner - Echosphere
+    </header>
+
+    <nav class="sidebar">
+        <a href="index.html" class="nav-button">🏠 Home</a>
+        <a href="waste-scanner.html" class="nav-button active">♻️ Waste Scanner</a>
+        <a href="chatbot.html" class="nav-button">🤖 Chatbot</a>
+        <a href="eco-map.html" class="nav-button">📍 Eco Map</a>
+        <a href="eco-score.html" class="nav-button">📊 Track Progress</a>
+    </nav>
+
+  
+    <main class="main-content">
+        <section class="scanner-container">
+            <input type="file" id="wasteInput" accept="image/*">
+            <button onclick="scanWaste()">📸 Scan Waste</button>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet" defer></script>
+    <script src="../scripts/waste-scanner.js" defer></script>
+
+</body>
+</html>
