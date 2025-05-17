@@ -1,1 +1,1 @@
-# EcoGenius
+EcoGenius is an AI-powered environmental assistant designed to guide you towards a greener lifestyle. With real-time insights into air quality, access to nearby recycling centers, eco-friendly stores, and sustainable transport options, EcoGenius empowers you to make eco-conscious choices every day. Whether you're just starting your sustainability journey or looking to track and improve your impact, EcoGenius is here to help — one smart decision at a time. Let’s build a cleaner, healthier future together!
